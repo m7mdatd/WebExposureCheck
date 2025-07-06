@@ -44,8 +44,7 @@ Unauthorized scanning or usage on websites you don’t own is illegal.
 
 📁 Project Structure
 bash
-نسخ
-تحرير
+
 web_exposure_check.py     # Main script
 README.md                 # Documentation
 requirements.txt          # (Optional) Python dependencies
