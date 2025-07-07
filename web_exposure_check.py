@@ -50,8 +50,11 @@ def check_url(base_url):
         except requests.exceptions.RequestException:
             print(Fore.RED + f"[!] Communication error: {full_url}" + Style.RESET_ALL)
 
-if __name__ == "__main__":
+if __name__ == "__main__" or sys.argv[0] == "-":
+    print_banner()
     if len(sys.argv) != 2:
-        print("Use: python3 web_exposure_check.py example.com")
+        print("Usage: python3 web_exposure_check.py example.com")
+        print("Or run directly from GitHub:")
+        print("curl -sL https://raw.githubusercontent.com/m7mdatd/WebExposureCheck/main/web_exposure_check.py | python3 - example.com")
         sys.exit(1)
     check_url(sys.argv[1])
