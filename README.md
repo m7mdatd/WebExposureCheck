@@ -28,9 +28,9 @@ The tool scans for common exposed paths such as:
 Install the required libraries:
 
 ```bash
-pip install requests colorama
+git clone https://github.com/m7mdatd/WebExposureCheck.git
+cd WebExposureCheck
 python3 web_exposure_check.py example.com
-You can also include http:// or https:// in the domain.
 
 🔍 Scanning: http://example.com/
 
